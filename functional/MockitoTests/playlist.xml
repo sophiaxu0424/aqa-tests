@@ -32,5 +32,22 @@
 			<impl>openj9</impl>
 		</impls>
 	</test>
-
+	<test>
+		<testCaseName>MockitoTests_ReproAppJunitTest</testCaseName>
+		<command>
+			$(JAVA_COMMAND) $(JVM_OPTIONS) -cp $(Q)$(RESOURCES_DIR)$(P)$(TEST_RESROOT)$(D)MockitoTests.jar$(P)$(LIB_DIR)$(D)mockito-core.jar$(P)$(LIB_DIR)$(D)junit-jupiter-api.jar$(Q) test.java.ReproAppJunitTest ; \
+			$(TEST_STATUS)</command>
+		<levels>
+			<level>extended</level>
+		</levels>
+		<groups>
+			<group>functional</group>
+		</groups>
+		<versions>
+			<version>17+</version>
+		</versions>
+		<impls>
+			<impl>openj9</impl>
+		</impls>
+	</test>
 </playlist>
