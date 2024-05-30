@@ -69,7 +69,7 @@ limitations under the License.
 		<echo>testing: the jdk version is ${JDK_VERSION}</echo>
 		<if>
 			<not>
-				<matches string="${JDK_VERSION}" pattern="^(8|9|10)$$" />
+				<matches string="${JDK_VERSION}" pattern="^(9|10|11|17|21)$$" />
 			</not>
 			<then>
 				<antcall target="clean" inheritall="true" />
